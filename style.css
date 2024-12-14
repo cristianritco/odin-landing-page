@@ -1,0 +1,207 @@
+/*RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BASE STYLES */
+body {
+    font-family: 'Roboto', 'Helvetica', serif;
+    background-color: #1F2937;
+    min-height: 1000px;
+    padding-top: 80px
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    background-color: #1F2937;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    max-width: 1250px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.logo-img {
+    max-width: 10%;
+    height: auto;
+    display: block;
+}
+
+.nav-bar {
+
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.nav-item {
+
+}
+
+.nav-link{
+    color: #E5E7EB;
+    transition: all 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:focus { 
+    color: #3882F6;
+}
+
+
+/* HERO SECTION */
+.hero-section {
+    padding: 5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-direction: column;
+    width:100%;
+}
+
+.hero-section-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    
+}
+
+.hero-section-subtitle {
+    display: column;
+    font-size: 18px;
+    color: #E5E7EB;
+    justify-content: flex-start;
+}
+
+.hero-section-button {
+    background-color: #3882F6;
+    border-radius: 10px;
+    border-style: none;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    padding: 10px 16px;
+}
+
+.hero-section-image {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    max-width: 15vw;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    align-self: flex-end;
+
+}
+
+
+/* RANDOM INFO SECTION */
+.random-info-section {
+    background-color: #FFFFFF;
+    padding: 5%;
+}
+
+.random-img-1 {
+
+}
+
+.random-img-2 {
+
+}
+
+.random-img-3 {
+
+}
+
+.random-img-4 {
+
+}
+
+
+/* INSPIRING QUOTE SECTION */
+.inspiring-quote-section {
+    padding: 15vw;
+    background-color: #E5E7EB;
+}
+
+.quote-content{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 100;
+}
+
+.inspiring-quote {
+    font-size: 26px;
+    color: #1F2937;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+
+/*CALL TO ACITON SECTION*/
+.call-to-action {
+    padding: 5vw;
+    background-color: #fff
+}
+
+.call-to-action-title {
+
+}
+
+.call-to-action-subtitle {
+
+}
+
+.call-to-aciton-button {
+
+}
+
+/*FOOTER*/
+footer {
+    background-color: #1F2937;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 650px){
+    .header-content {
+        flex-direction: row;
+        align-items: right;
+        height: 0;
+        row-gap: 18px
+        margin: 20px;
+
+    }
+
+}
