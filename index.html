@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Odin Landing Page</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header-content">
@@ -29,48 +31,83 @@
         </div>
     </header>
 
-    <div class="hero-section">
-        <h1 class="hero-section-title">This webiste is awesome</h1>
-        <p class="hero-section-subtitle">This website has some subtext that goes here under the
-        main title. It's a smaller font and the color is lower
-        contrast</p>
-        <button class="hero-section-button">Sign Up</button>
-        <img class="hero-section-image" alt="Hero section placeholder" src="./assets/top-logo.png"> 
+    <!-- HERO SECTION -->
+
+    <div class="hero-container">
+        <div class="hero-section">
+            <h1 class="hero-section-title">This webiste is awesome</h1>
+            <p class="hero-section-subtitle">This website has some subtext that goes here under the
+                main title. It's a smaller font and the color is lower
+                contrast</p>
+            <button class="hero-section-button">Sign Up</button>
+        </div>
+        <div class="section-image">
+            <img class="hero-section-image" alt="Hero section placeholder" src="./assets/top-logo.png">
+        </div>
     </div>
 
-    <div class="random-info-section">
-        <h2>Some random information.</h2>
-        <img class="random-img-1" alt="Random image placeholder">
-        <p>this is some subtext under an illustration or image</p>
-        <img class="random-img-2" alt="Random image placeholder">
-        <p>this is some subtext under an illustration or image</p>
-        <img class="random-img-3" alt="Random image placeholder">
-        <p>this is some subtext under an illustration or image</p>
-        <img class="random-img-4" alt="Random image placeholder">
-        <p>this is some subtext under an illustration or image</p>
+    <!-- RANDOM INFO SECTION -->
+
+    <div class="random-section">
+        <h1>Some random information.</h1>
+        <div class="random-items">
+            <div class="random-img">
+                <div class="image-placeholder"></div>
+                <p>this is some subtext<br>under an illustration<br>or image</p>
+            </div>
+
+            <div class="random-item">
+                <div class="image-placeholder"></div>
+                <p>this is some subtext<br>under an illustration<br>or image</p>
+            </div>
+
+            <div class="random-item">
+                <div class="image-placeholder"></div>
+                <p>this is some subtext<br>under an illustration<br>or image</p>
+            </div>
+
+            <div class="random-item">
+                <div class="image-placeholder"></div>
+                <p>this is some subtext<br>under an illustration<br>or image</p>
+            </div>
+        </div>
     </div>
+
+    <!-- QUOTE SECTION -->
 
     <div class="inspiring-quote-section">
         <p class="inspiring-quote">
-        <q class="quote-content">This is an inspiring quote, or a testimonial from a
-        customer. Maybe it's just filling up space, or maybe
-        people will actually read it. Who knows? All I know
-        is that it looks nice.
-        </q>
-        -Thor, God of Thunder
+            <q class="quote-content">This is an inspiring quote, or a testimonial from a
+                customer. Maybe it's just filling up space, or maybe
+                people will actually read it. Who knows? All I know
+                is that it looks nice.
+            </q>
+        <p class="quotationist">
+            -Thor, God of Thunder
+        </p>
         </p>
     </div>
-    
-    <div class="call-to-action">
-        <p class="call-to-action-title">Call to action! It's time!</p>
-        <p class="call-to-action-subtitle">Sign up for our product by clicking that button right over there!</p>
-        <button class="call-to-action-button">Sign Up</button>
+
+    <!-- CTA SECTION -->
+
+    <div class="cta-section">
+        <div class="cta-banner">
+            <div class="cta-content">
+                <h2>Call to action! It's time!</h2>
+                <p>Sign up for our product by clicking that button right over there!</p>
+            </div>
+            <button class="cta-button">Sign up</button>
+        </div>
     </div>
+
+    <!-- FOOTER SECTION -->
 
     <footer>
         <small>
-        Copyright © The Odin Project 2021
+            Copyright © The Odin Project 2021
         </small>
-      </footer>
+    </footer>
+
 </body>
+
 </html>

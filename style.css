@@ -30,7 +30,7 @@ ul {
 
 .header-content {
     display: flex;
-    align-items: center;
+    align-items: justify;
     justify-content: space-between;
     min-height: 60px;
     max-width: 1250px;
@@ -38,9 +38,15 @@ ul {
     margin: 0 auto;
 }
 
+.hero-section-title {
+    display: inline-block;
+    text-align: left;
+}
+
 .logo-img {
-    max-width: 10%;
+    width: 10%;
     height: auto;
+    margin-top: 2%;
     display: block;
 }
 
@@ -51,6 +57,7 @@ ul {
 .nav-list {
     display: flex;
     column-gap: 40px;
+    padding: 2vw;
 }
 
 .nav-item {
@@ -69,13 +76,18 @@ ul {
 
 
 /* HERO SECTION */
+
+.hero-container{
+    display:flex;
+    flex: 1;
+    flex-direction: row;
+
+}
+
 .hero-section {
     padding: 5vw;
-    display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
-    flex-grow: 1;
-    flex-direction: column;
+    justify-content: space-between;
     width:100%;
 }
 
@@ -83,62 +95,88 @@ ul {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+    text-wrap: wrap;
+    padding: auto;
+    margin: 10px 0 10px 0;
+
     
 }
 
 .hero-section-subtitle {
-    display: column;
     font-size: 18px;
     color: #E5E7EB;
-    justify-content: flex-start;
+    text-wrap: wrap;
+    padding: auto;
+    margin: 10px 0 10px 0;
+
+
 }
 
 .hero-section-button {
     background-color: #3882F6;
     border-radius: 10px;
     border-style: none;
-    margin: 0;
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 600;
     height: 40px;
     padding: 10px 16px;
+    margin: 10px 0 10px 0;
+
+
 }
 
 .hero-section-image {
-    flex-grow: 1;
-    flex-wrap: wrap;
-    max-width: 15vw;
+    max-width: 250px; 
     height: auto;
     background-color: #fff;
-    border-radius: 10px;
-    padding: 15px;
-    align-self: flex-end;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 40px;
 
 }
 
 
 /* RANDOM INFO SECTION */
-.random-info-section {
+
+.random-section {
     background-color: #FFFFFF;
-    padding: 5%;
+    padding: 5vw;
 }
-
-.random-img-1 {
-
-}
-
-.random-img-2 {
-
-}
-
-.random-img-3 {
-
-}
-
-.random-img-4 {
-
-}
+  
+  .random-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    margin-top: 5vw;
+    padding-bottom: 5vw;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #222;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+  }
+  
+  .random-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    border: 2px solid #3377ff;
+    border-radius: 16px;
+  }
+  
+  .random-items p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+  }
 
 
 /* INSPIRING QUOTE SECTION */
@@ -147,10 +185,19 @@ ul {
     background-color: #E5E7EB;
 }
 
-.quote-content{
+.quote-content {
     font-size: 36px;
     color: #1F2937;
     font-weight: 100;
+    font-style: italic;
+}
+
+.quotationist {
+    padding: 5vw;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 800;
+    text-align: end;
 }
 
 .inspiring-quote {
@@ -161,25 +208,45 @@ ul {
 }
 
 
-
-
 /*CALL TO ACITON SECTION*/
-.call-to-action {
-    padding: 5vw;
-    background-color: #fff
+
+.cta-section {
+    background-color: white;
+    padding: 10vw;
 }
 
-.call-to-action-title {
-
-}
-
-.call-to-action-subtitle {
-
-}
-
-.call-to-aciton-button {
-
-}
+.cta-banner {
+    background-color: #3b82f6;
+    color: white;
+    padding: 40px 100px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr auto ;
+    align-items: center;
+  }
+  
+  .cta-content h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .cta-content p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  
+  .cta-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
 
 /*FOOTER*/
 footer {
@@ -188,7 +255,8 @@ footer {
     margin: 20px;
     display: flex;
     justify-content: center;
-    color: #fff;
+    color: #FFFFFF;
+    font-weight: 100;
 
 }
 
@@ -200,8 +268,11 @@ footer {
         align-items: right;
         height: 0;
         row-gap: 18px
-        margin: 20px;
+        margin: 20px;   
+    }
 
+    .logo-img {
+        min-width: 20%;
     }
 
 }
